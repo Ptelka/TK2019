@@ -1,16 +1,61 @@
 fileFormatVersion: 2
-guid: f32576ee23d0d4659acfc25192a29aa5
+guid: 03027ace337f64d5c93ac087aa707d86
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: None__WaterV2_png
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Plane
-    7400000: Default Take
-    9500000: //RootNode
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: Material.025
+    2100002: Material
+    2100004: Material.023
+    2100006: Material.047
+    2100008: Material.041
+    2100010: Material.042
+    2100012: Material.006
+    2100014: Material.040
+    2100016: Material.022
+    2100018: Material.010
+    2100020: Material.007
+    2100022: Material.008
+    2100024: Material.019
+    2100026: Material.012
+    2100028: Material.015
+    2100030: Material.016
+    2100032: Material.017
+    2100034: Material.003
+    2100036: Material.002
+    2100038: Material.011
+    2100040: Material.004
+    2100042: Material.018
+    2100044: Material.009
+    2100046: Material.013
+    2100048: Material.020
+    2100050: Material.001
+    2100052: Material.024
+    2100054: None
+    2100056: Material.039
+    2100058: Material.038
+    2100060: Material.037
+    2100062: Material.036
+    2100064: Material.035
+    2100066: Material.034
+    2100068: Material.033
+    2100070: Material.032
+    2100072: Material.031
+    2100074: Material.030
+    2100076: Material.029
+    2100078: Material.028
+    2100080: Material.027
+    2100082: Material.026
+    2100084: Material.046
+    2100086: Material.045
+    2100088: Material.044
+    2100090: Material.043
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -85,7 +130,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
