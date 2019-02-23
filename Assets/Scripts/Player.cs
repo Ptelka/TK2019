@@ -9,23 +9,25 @@ public class Player : MonoBehaviour
     public int Controller;
     public GameObject[] projectiles;
     public float Force;
+    public Transform SpawnPoint;
 
 
     private void Update()
     {
-        if (InputWrapper.GetAxis("LeftAttack",Controller)>0.5f)
+        Vector3 throwVector =  Boat.transform.forward * 2 + new Vector3(0, 0.05f, 0);
+        if (Input.GetMouseButtonDown(0))
         {
-            Shoot((-Boat.transform.right + Boat.transform.forward + new Vector3(0, 1, 0)) * Force, projectiles[Random.Range(0, projectiles.Length)]);
+            Shoot((-Boat.transform.right / 2+ throwVector) * Force + Boat.velocity, projectiles[Random.Range(0, projectiles.Length)]);
         }
-        if (InputWrapper.GetAxis("RightAttack", Controller)>0.5f)
+        if (Input.GetMouseButtonDown(1))
         {
-            Shoot((Boat.transform.right + Boat.transform.forward + new Vector3(0, 1, 0)) * Force, projectiles[Random.Range(0, projectiles.Length)]);
+            Shoot((Boat.transform.right / 2+throwVector) *Force + Boat.velocity, projectiles[Random.Range(0, projectiles.Length)]);
         }
     }
 
     private void Shoot(Vector3 direction, GameObject projectileGO)
     {
-        Projectile projectile = Instantiate(projectileGO, transform.position + direction.normalized, projectileGO.transform.rotation).GetComponent<Projectile>();
+        Projectile projectile = Instantiate(projectileGO, SpawnPoint.position, projectileGO.transform.rotation).GetComponent<Projectile>();
         projectile.SetTrajectory(direction);
     }
 }

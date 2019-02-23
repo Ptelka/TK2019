@@ -34,7 +34,7 @@ public class Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         coll = GetComponent<Collider>();
         coll.enabled = false;
-        Invoke("EnableCollider", 0.5f);
+        Invoke("EnableCollider", 0.25f);
     }
     
     private void EnableCollider()
@@ -48,7 +48,7 @@ public class Projectile : MonoBehaviour
         rb.velocity = direction;
         if (weaponType == WeaponType.hack)
         {
-            rb.AddRelativeTorque(30,0,0);
+            rb.AddRelativeTorque(900,0,0);
         }
     }
 
