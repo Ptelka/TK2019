@@ -269,7 +269,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1586092579577474}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -371,7 +371,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153563211533192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -599,6 +599,7 @@ MonoBehaviour:
   Controller: 0
   projectiles:
   - {fileID: 1662523567867080, guid: 88b069d5eeb6a4d479aceb9eccd5ee03, type: 2}
+  - {fileID: 1308180871918706, guid: 8717effdb3295a1449e2cd7789693b07, type: 2}
   Force: 10
   SpawnPoint: {fileID: 4172202890411922}
 --- !u!114 &114474944294023900
@@ -625,7 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 114213859264027272}
-  speed: 100
+  speed: 10000
   Position: 1
 --- !u!114 &114807814599392082
 MonoBehaviour:
@@ -639,7 +640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: {fileID: 114213859264027272}
-  speed: 100
+  speed: 10000
   Position: 0
 --- !u!114 &114808796244483564
 MonoBehaviour:

@@ -15,11 +15,11 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Vector3 throwVector =  Boat.transform.forward * 2 + new Vector3(0, 0.05f, 0);
-        if (Input.GetMouseButtonDown(0))
+        if (InputWrapper.GetButtonDown("L1", Controller))
         {
             Shoot((-Boat.transform.right / 2+ throwVector) * Force + Boat.velocity, projectiles[Random.Range(0, projectiles.Length)]);
         }
-        if (Input.GetMouseButtonDown(1))
+        if (InputWrapper.GetButtonDown("R1", Controller))
         {
             Shoot((Boat.transform.right / 2+throwVector) *Force + Boat.velocity, projectiles[Random.Range(0, projectiles.Length)]);
         }
