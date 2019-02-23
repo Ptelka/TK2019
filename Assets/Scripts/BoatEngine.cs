@@ -50,6 +50,7 @@ public class BoatEngine : MonoBehaviour {
 		
 		if (works)
 		{
+			parentBody.AddForceAtPosition(new Vector3(0, 0, (prevAxisValue - currectYAxisValue) * Time.deltaTime * Speed), transform.position);
 		}
 
 		prevAxisValue = currectYAxisValue;
@@ -62,20 +63,14 @@ public class BoatEngine : MonoBehaviour {
 		
 		Oar.transform.localRotation = Quaternion.Lerp(Oar.transform.localRotation, Quaternion.Euler(target.x, target.y, target.z), .5f);
 	}
-
-	private float ts;
 	
 	private void OnTriggerEnter(Collider other)
 	{
-		ts = Time.time;
 		works = true;
 	}
 	
 	private void OnTriggerExit(Collider other)
 	{
 		works = false;
-		Vector3 force = new Vector3(0, 0, 0.1f) * Speed / ts;
-		parentBody.AddForceAtPosition(force, transform.position);
-		Debug.Log(force);
 	}
 }
