@@ -10,44 +10,72 @@ public class BoatEngine : MonoBehaviour {
 	
 	private Rigidbody body;
 	private Rigidbody parentBody;
-	private String stick;
-	private float oarRotation;
+	private String analogY;
+	private String analogX;
+	private Vector3 oarRotation;
+
+	private bool works;
 	
 	void Start ()
 	{
-		stick = Position == 0 ? InputWrapper.LeftAxisY : InputWrapper.RightAxisY;
+		analogY = Position == 0 ? InputWrapper.LeftAxisY : InputWrapper.RightAxisY;
+		analogX = Position == 0 ? InputWrapper.LeftAxisX : InputWrapper.RightAxisX;
 		
-		Debug.Log(stick);
+		Debug.Log(analogY);
 		
 		body = GetComponent<Rigidbody>();
 		body.isKinematic = true;
-		parentBody = transform.parent.GetComponent<Rigidbody>();
 
-		oarRotation = Oar.transform.localEulerAngles.y;
+		if (transform.parent)
+		{
+			parentBody = transform.parent.GetComponent<Rigidbody>();
+			if (transform.parent.parent)
+			{
+				parentBody = transform.parent.parent.GetComponent<Rigidbody>();
+			}
+		}
+
+		oarRotation = Oar.transform.localEulerAngles;
 	}
 
 
 	private bool stageForward;
-	private bool stageBackward;
+	private bool stageBackward; 
 
 	private float prevAxisValue;
 	
 	void Update () {
-		float currectAxisValue = InputWrapper.GetAxis(stick, Controller);
-
-		if (currectAxisValue < prevAxisValue)
+		float currectYAxisValue = -InputWrapper.GetAxis(analogX, Controller);
+		float currectXAxisValue = -InputWrapper.GetAxis(analogY, Controller);
+		
+		if (works)
 		{
-			parentBody.AddForceAtPosition(new Vector3(0, 0, -(currectAxisValue - prevAxisValue) * Time.deltaTime * Speed), transform.position);
-		}
-		else if (currectAxisValue > prevAxisValue)
-		{
-			parentBody.AddForceAtPosition(new Vector3(0, 0, -(currectAxisValue - prevAxisValue) * Time.deltaTime * Speed / 10), transform.position);
 		}
 
-		prevAxisValue = currectAxisValue;
+		prevAxisValue = currectYAxisValue;
 
-		var ea = Oar.transform.localEulerAngles;
-		ea.y = oarRotation + 20 * currectAxisValue;
-		Oar.transform.localEulerAngles = ea;
+		var target = Oar.transform.localEulerAngles;
+
+		target.x = oarRotation.x;
+		target.y = oarRotation.y - 50 * currectYAxisValue;
+		target.z = oarRotation.z + 30 * currectXAxisValue;
+		
+		Oar.transform.localRotation = Quaternion.Lerp(Oar.transform.localRotation, Quaternion.Euler(target.x, target.y, target.z), .5f);
+	}
+
+	private float ts;
+	
+	private void OnTriggerEnter(Collider other)
+	{
+		ts = Time.time;
+		works = true;
+	}
+	
+	private void OnTriggerExit(Collider other)
+	{
+		works = false;
+		Vector3 force = new Vector3(0, 0, 0.1f) * Speed / ts;
+		parentBody.AddForceAtPosition(force, transform.position);
+		Debug.Log(force);
 	}
 }
