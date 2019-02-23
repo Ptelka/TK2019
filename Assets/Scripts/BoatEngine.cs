@@ -6,7 +6,7 @@ public class BoatEngine : MonoBehaviour {
 	[SerializeField] private int Controller;
 	[SerializeField] private int Position;
 	[SerializeField] private GameObject Oar;
-	
+	[SerializeField] private float Speed;
 	
 	private Rigidbody body;
 	private Rigidbody parentBody;
@@ -37,11 +37,11 @@ public class BoatEngine : MonoBehaviour {
 
 		if (currectAxisValue < prevAxisValue)
 		{
-			parentBody.AddForceAtPosition(new Vector3(0, 0, 0.25f), transform.position);
+			parentBody.AddForceAtPosition(new Vector3(0, 0, -(currectAxisValue - prevAxisValue) * Time.deltaTime * Speed), transform.position);
 		}
 		else if (currectAxisValue > prevAxisValue)
 		{
-			parentBody.AddForceAtPosition(new Vector3(0, 0, -0.09f), transform.position);
+			parentBody.AddForceAtPosition(new Vector3(0, 0, -(currectAxisValue - prevAxisValue) * Time.deltaTime * Speed / 10), transform.position);
 		}
 
 		prevAxisValue = currectAxisValue;
@@ -49,7 +49,5 @@ public class BoatEngine : MonoBehaviour {
 		var ea = Oar.transform.localEulerAngles;
 		ea.y = oarRotation + 20 * currectAxisValue;
 		Oar.transform.localEulerAngles = ea;
-		
-		Debug.Log(currectAxisValue);
 	}
 }
