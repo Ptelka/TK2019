@@ -6,11 +6,11 @@ public class BoatEngine : MonoBehaviour
 {
     public Player owner;
     public float speed;
+    public int Position;
 
+    private int Controller;
     private Rigidbody boat;
     private Vector3 basePosition;
-    [SerializeField] private int Controller;
-    [SerializeField] private int Position;
     private string analogY;
     private string analogX;
     private float previousValX;
@@ -19,6 +19,7 @@ public class BoatEngine : MonoBehaviour
     private void Start()
     {
         boat = owner.Boat;
+        Controller = owner.Controller;
         basePosition = transform.localPosition;
         analogY = Position == 0 ? InputWrapper.LeftAxisY : InputWrapper.RightAxisY;
         analogX = Position == 0 ? InputWrapper.LeftAxisX : InputWrapper.RightAxisX;

@@ -208,8 +208,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1227143869986202}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6540761, y: -4.1936197, z: 10.009645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6540761, y: -4.1936197, z: 4.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4573963310458226}
@@ -524,6 +524,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Boat: {fileID: 0}
+  Controller: 0
+  projectiles:
+  - {fileID: 1256656189996550, guid: 9576df1f4db50aa47bb989f7e756805b, type: 2}
+  - {fileID: 1185911576686222, guid: ca223c37358946e4b8a279ba006bceb7, type: 2}
+  - {fileID: 1837660547763794, guid: 5da8d435718da31439a9c150c06f790f, type: 2}
+  Force: 10
 --- !u!114 &114474944294023900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -549,7 +555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owner: {fileID: 114213859264027272}
   speed: 100
-  Controller: 0
   Position: 1
 --- !u!114 &114807814599392082
 MonoBehaviour:
@@ -564,7 +569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owner: {fileID: 114213859264027272}
   speed: 100
-  Controller: 0
   Position: 0
 --- !u!114 &114808796244483564
 MonoBehaviour:
