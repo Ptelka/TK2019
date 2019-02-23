@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Owner : MonoBehaviour {
-
+public class Boat : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
@@ -13,9 +12,4 @@ public class Owner : MonoBehaviour {
 	void Update () {
 		
 	}
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("child hit");
-    }
 }
