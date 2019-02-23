@@ -1,42 +1,41 @@
 fileFormatVersion: 2
-guid: a634e2808261845cfa052e2f6cd3d2b7
+guid: 46a08a6f676bc4bf39eb9f55e283068b
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Cube_200
-    100002: Cube_201
-    100004: Cube_202
+    100000: Cube.200
+    100002: Cube.201
+    100004: Cube.202
     100006: Cylinder
-    100008: Cylinder_001
+    100008: Cylinder.001
     100010: //RootNode
-    400000: Cube_200
-    400002: Cube_201
-    400004: Cube_202
+    400000: Cube.200
+    400002: Cube.201
+    400004: Cube.202
     400006: Cylinder
-    400008: Cylinder_001
+    400008: Cylinder.001
     400010: //RootNode
-    2100000: Material_004
-    2100002: Material_001
-    2100004: Material_002
-    2100006: Material_003
-    2300000: Cube_200
-    2300002: Cube_201
-    2300004: Cube_202
+    2100000: Material.004
+    2100002: Material.001
+    2100004: Material.002
+    2100006: Material.003
+    2300000: Cube.200
+    2300002: Cube.201
+    2300004: Cube.202
     2300006: Cylinder
-    2300008: Cylinder_001
-    3300000: Cube_200
-    3300002: Cube_201
-    3300004: Cube_202
+    2300008: Cylinder.001
+    3300000: Cube.200
+    3300002: Cube.201
+    3300004: Cube.202
     3300006: Cylinder
-    3300008: Cylinder_001
-    4300000: Cylinder_001
-    4300002: Cube_200
-    4300004: Cube_201
-    4300006: Cube_202
+    3300008: Cylinder.001
+    4300000: Cylinder.001
+    4300002: Cube.200
+    4300004: Cube.201
+    4300006: Cube.202
     4300008: Cylinder
-    7400000: Default Take
+    7400000: Cylinder|CylinderAction
     9500000: //RootNode
-    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,35 +62,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Default Take
-      takeName: Default Take
-      firstFrame: 0
-      lastFrame: 52
-      wrapMode: 2
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 1
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -136,10 +107,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

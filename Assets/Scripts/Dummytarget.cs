@@ -1,13 +1,12 @@
-﻿using System;
-using NUnit.Framework;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BoatEngine : MonoBehaviour
+public class Dummytarget : MonoBehaviour
 {
-    public Player owner;
+    public Rigidbody owner;
     public float speed;
 
-    private Rigidbody boat;
     private Vector3 basePosition;
     [SerializeField] private int Controller;
     [SerializeField] private int Position;
@@ -18,7 +17,6 @@ public class BoatEngine : MonoBehaviour
 
     private void Start()
     {
-        boat = owner.Boat;
         basePosition = transform.localPosition;
         analogY = Position == 0 ? InputWrapper.LeftAxisY : InputWrapper.RightAxisY;
         analogX = Position == 0 ? InputWrapper.LeftAxisX : InputWrapper.RightAxisX;
@@ -35,8 +33,8 @@ public class BoatEngine : MonoBehaviour
         works = InputWrapper.GetAxis(analogY, Controller) > 0;
         if (works)
         {
-            boat.AddRelativeTorque(new Vector3(0, speed * 5 * Mathf.Clamp((currentValX - previousValX), -1, 1) * (Position == 0 ? 1 : -1)));
-            boat.AddForce(owner.transform.forward * speed * Mathf.Clamp((currentValX - previousValX), -1, 1));
+            owner.AddRelativeTorque(new Vector3(0,speed *5* Mathf.Clamp((currentValX - previousValX), -1, 1) * (Position == 0 ? 1 : -1)));
+            owner.AddForce(owner.transform.forward * speed * Mathf.Clamp((currentValX - previousValX), -1, 1));
         }
         previousValX = transform.localPosition.z;
     }
