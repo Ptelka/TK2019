@@ -495,6 +495,36 @@ ModelImporter:
     100978: Cylinder_002
     100980: Cylinder_003
     100982: Cylinder_004
+    100984: Cube_561
+    100986: Cube_562
+    100988: Cube_563
+    100990: Cube_564
+    100992: Cube_565
+    100994: Cube_566
+    100996: Cube_567
+    100998: Cube_568
+    101000: Cube_569
+    101002: Cube_570
+    101004: Cube_571
+    101006: Cube_572
+    101008: Cube_573
+    101010: Cube_575
+    101012: Cube_576
+    101014: Cube_577
+    101016: Cube_578
+    101018: Cube_579
+    101020: Cube_580
+    101022: Cube_581
+    101024: Cube_582
+    101026: Cube_583
+    101028: Cube_584
+    101030: Cube_585
+    101032: Cube_586
+    101034: Cube_587
+    101036: Cube_588
+    101038: Cube_589
+    101040: Cube_590
+    101042: Cube_591
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -987,6 +1017,36 @@ ModelImporter:
     400978: Cylinder_002
     400980: Cylinder_003
     400982: Cylinder_004
+    400984: Cube_561
+    400986: Cube_562
+    400988: Cube_563
+    400990: Cube_564
+    400992: Cube_565
+    400994: Cube_566
+    400996: Cube_567
+    400998: Cube_568
+    401000: Cube_569
+    401002: Cube_570
+    401004: Cube_571
+    401006: Cube_572
+    401008: Cube_573
+    401010: Cube_575
+    401012: Cube_576
+    401014: Cube_577
+    401016: Cube_578
+    401018: Cube_579
+    401020: Cube_580
+    401022: Cube_581
+    401024: Cube_582
+    401026: Cube_583
+    401028: Cube_584
+    401030: Cube_585
+    401032: Cube_586
+    401034: Cube_587
+    401036: Cube_588
+    401038: Cube_589
+    401040: Cube_590
+    401042: Cube_591
     2100000: Material_022
     2100002: Material_025
     2100004: Material_011
@@ -1058,6 +1118,18 @@ ModelImporter:
     2100136: Material_077
     2100138: Material_075
     2100140: Material_074
+    2100142: Material_101
+    2100144: Material_098
+    2100146: Material_100
+    2100148: Material_099
+    2100150: Material_092
+    2100152: Material_091
+    2100154: Material_090
+    2100156: Material_089
+    2100158: Material_094
+    2100160: Material_093
+    2100162: Material_096
+    2100164: Material_095
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -1549,6 +1621,36 @@ ModelImporter:
     2300976: Cylinder_002
     2300978: Cylinder_003
     2300980: Cylinder_004
+    2300982: Cube_561
+    2300984: Cube_562
+    2300986: Cube_563
+    2300988: Cube_564
+    2300990: Cube_565
+    2300992: Cube_566
+    2300994: Cube_567
+    2300996: Cube_568
+    2300998: Cube_569
+    2301000: Cube_570
+    2301002: Cube_571
+    2301004: Cube_572
+    2301006: Cube_573
+    2301008: Cube_575
+    2301010: Cube_576
+    2301012: Cube_577
+    2301014: Cube_578
+    2301016: Cube_579
+    2301018: Cube_580
+    2301020: Cube_581
+    2301022: Cube_582
+    2301024: Cube_583
+    2301026: Cube_584
+    2301028: Cube_585
+    2301030: Cube_586
+    2301032: Cube_587
+    2301034: Cube_588
+    2301036: Cube_589
+    2301038: Cube_590
+    2301040: Cube_591
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -2040,6 +2142,36 @@ ModelImporter:
     3300976: Cylinder_002
     3300978: Cylinder_003
     3300980: Cylinder_004
+    3300982: Cube_561
+    3300984: Cube_562
+    3300986: Cube_563
+    3300988: Cube_564
+    3300990: Cube_565
+    3300992: Cube_566
+    3300994: Cube_567
+    3300996: Cube_568
+    3300998: Cube_569
+    3301000: Cube_570
+    3301002: Cube_571
+    3301004: Cube_572
+    3301006: Cube_573
+    3301008: Cube_575
+    3301010: Cube_576
+    3301012: Cube_577
+    3301014: Cube_578
+    3301016: Cube_579
+    3301018: Cube_580
+    3301020: Cube_581
+    3301022: Cube_582
+    3301024: Cube_583
+    3301026: Cube_584
+    3301028: Cube_585
+    3301030: Cube_586
+    3301032: Cube_587
+    3301034: Cube_588
+    3301036: Cube_589
+    3301038: Cube_590
+    3301040: Cube_591
     4300000: Cube_341
     4300002: Cube_340
     4300004: Cube_339
@@ -2531,6 +2663,36 @@ ModelImporter:
     4300976: Cube_481
     4300978: Cube_480
     4300980: Cube_479
+    4300982: Cube_591
+    4300984: Cube_590
+    4300986: Cube_589
+    4300988: Cube_588
+    4300990: Cube_587
+    4300992: Cube_586
+    4300994: Cube_585
+    4300996: Cube_584
+    4300998: Cube_583
+    4301000: Cube_582
+    4301002: Cube_581
+    4301004: Cube_580
+    4301006: Cube_579
+    4301008: Cube_578
+    4301010: Cube_577
+    4301012: Cube_576
+    4301014: Cube_575
+    4301016: Cube_568
+    4301018: Cube_567
+    4301020: Cube_566
+    4301022: Cube_565
+    4301024: Cube_564
+    4301026: Cube_563
+    4301028: Cube_562
+    4301030: Cube_561
+    4301032: Cube_571
+    4301034: Cube_570
+    4301036: Cube_569
+    4301038: Cube_572
+    4301040: Cube_573
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -2571,7 +2733,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
