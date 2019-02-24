@@ -1,12 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HPDisplay : MonoBehaviour
 {
-	private float max = 100;
+    [SerializeField]
+    public Slider hpSlider;
+    public float max = 100;
 
-	public void setmax(float max)
+    private void Start()
+    {
+        hpSlider.value = 1;
+        display(max);
+    }
+
+    public void setmax(float max)
 	{
 		this.max = max;
 		display(max);
@@ -19,6 +28,6 @@ public class HPDisplay : MonoBehaviour
 
 	public void display(float current)
 	{
-		Debug.Log(current / max * 100f + "%");
+        hpSlider.value = current;
 	}
 }
