@@ -63,6 +63,12 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         gameObject.tag = "Used";
+        if (collision.gameObject.CompareTag("Plane"))
+        {
+            Destroy(gameObject, deathDelay);
+            return;
+        }
+        
         switch (weaponType)
         {
             case WeaponType.blunt:

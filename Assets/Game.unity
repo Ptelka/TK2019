@@ -155,7 +155,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 187796700}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1611,6 +1611,10 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1139323134592372, guid: 1c39badb770174047abe3e7f434be84d, type: 2}
+      propertyPath: m_TagString
+      value: Wlocznicy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c39badb770174047abe3e7f434be84d, type: 2}
   m_IsPrefabParent: 0
@@ -1829,6 +1833,10 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1849092239031082, guid: e3489aa8c8b6eba4da9130d9c382e031, type: 2}
+      propertyPath: m_TagString
+      value: Topornicy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3489aa8c8b6eba4da9130d9c382e031, type: 2}
   m_IsPrefabParent: 0
@@ -1845,7 +1853,7 @@ GameObject:
   - component: {fileID: 1180016052}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1856,7 +1864,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1180016051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2323,7 +2331,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1506395389}
   m_LocalRotation: {x: 0, y: -0.34306142, z: 0, w: 0.939313}
-  m_LocalPosition: {x: 594.1, y: -10.1, z: 832.1}
+  m_LocalPosition: {x: 594.1, y: -9, z: 832.1}
   m_LocalScale: {x: 5.98, y: 2.55, z: 5.74}
   m_Children: []
   m_Father: {fileID: 0}

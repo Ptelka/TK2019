@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour {
 	[SerializeField] private float HP;
-	[SerializeField] private float CollsionDamageMultiplayer;
+	[SerializeField] private float CollsionDamageMultiplayer = 0;
 	[SerializeField] private ParticleSystem Explosion;
 	
 	private HPDisplay display;
@@ -37,19 +37,13 @@ public class Destroyer : MonoBehaviour {
 		float dmg = 0;
 		if (other.gameObject.CompareTag("Weapon"))
 		{
-			//dmg = other.gameObject.GetComponent<Projectile>().GetDamage();
-		}
-		else
-		{
-			var v = body.velocity;
-			dmg = v.magnitude * CollsionDamageMultiplayer;
-		}
-		
-		display.display(HP -= dmg);
-		if (HP <= 0)
-		{
-			EXPLODE1111ONMEONEONE();
-            Invoke("EndGame", 3);
+			dmg = other.gameObject.GetComponent<Projectile>().GetDamage();
+			display.display(HP -= dmg);
+			if (HP <= 0)
+			{
+				EXPLODE1111ONMEONEONE();
+				Invoke("EndGame", 3);
+			}
 		}
 	}
 
