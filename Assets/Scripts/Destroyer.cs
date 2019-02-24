@@ -49,6 +49,19 @@ public class Destroyer : MonoBehaviour {
 		if (HP <= 0)
 		{
 			EXPLODE1111ONMEONEONE();
+            Invoke("EndGame", 3);
 		}
 	}
+
+    private void EndGame()
+    {
+        if (gameObject.tag == "Topornicy")
+        {
+            GameControll.Instance.EndGame(Team.Topornicy);
+        }
+        else if(gameObject.tag == "Wlocznicy")
+        {
+            GameControll.Instance.EndGame(Team.Wlocznicy);
+        }
+    }
 }
