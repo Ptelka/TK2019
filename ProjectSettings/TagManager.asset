@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Weapon
   - Used
+  - Source
+  - Destination
   layers:
   - Default
   - TransparentFX
