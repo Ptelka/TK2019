@@ -550,6 +550,36 @@ ModelImporter:
     101088: Cube_880
     101090: Cube_881
     101092: Cube_882
+    101094: abstract_city_001
+    101096: axe
+    101098: axe_001
+    101100: Cube_883
+    101102: Cube_884
+    101104: Cube_885
+    101106: Cube_886
+    101108: Cube_887
+    101110: Cube_888
+    101112: Cube_889
+    101114: Cube_890
+    101116: Cube_891
+    101118: Cube_892
+    101120: Cube_893
+    101122: Cube_894
+    101124: Cube_895
+    101126: Cube_896
+    101128: Cube_897
+    101130: Cube_898
+    101132: Cube_899
+    101134: Cube_900
+    101136: Cube_901
+    101138: Cube_902
+    101140: Cube_903
+    101142: Cylinder_005
+    101144: Cylinder_006
+    101146: Cylinder_007
+    101148: Cylinder_008
+    101150: spear
+    101152: spear_001
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -1097,6 +1127,36 @@ ModelImporter:
     401088: Cube_880
     401090: Cube_881
     401092: Cube_882
+    401094: abstract_city_001
+    401096: axe
+    401098: axe_001
+    401100: Cube_883
+    401102: Cube_884
+    401104: Cube_885
+    401106: Cube_886
+    401108: Cube_887
+    401110: Cube_888
+    401112: Cube_889
+    401114: Cube_890
+    401116: Cube_891
+    401118: Cube_892
+    401120: Cube_893
+    401122: Cube_894
+    401124: Cube_895
+    401126: Cube_896
+    401128: Cube_897
+    401130: Cube_898
+    401132: Cube_899
+    401134: Cube_900
+    401136: Cube_901
+    401138: Cube_902
+    401140: Cube_903
+    401142: Cylinder_005
+    401144: Cylinder_006
+    401146: Cylinder_007
+    401148: Cylinder_008
+    401150: spear
+    401152: spear_001
     2100000: Material_022
     2100002: Material_025
     2100004: Material_011
@@ -1180,6 +1240,24 @@ ModelImporter:
     2100160: Material_093
     2100162: Material_096
     2100164: Material_095
+    2100166: abstract_city_001__abstract_city_jpg
+    2100168: spear__spear_jpg
+    2100170: axe__axe_jpg
+    2100172: Material_105
+    2100174: Material_104
+    2100176: Material_103
+    2100178: Material_102
+    2100180: Material_043
+    2100182: Material_044
+    2100184: Material_113
+    2100186: Material_048
+    2100188: Material_046
+    2100190: Material_107
+    2100192: Material_106
+    2100194: Material_109
+    2100196: Material_108
+    2100198: Material_111
+    2100200: Material_110
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -1726,6 +1804,36 @@ ModelImporter:
     2301086: Cube_880
     2301088: Cube_881
     2301090: Cube_882
+    2301092: abstract_city_001
+    2301094: axe
+    2301096: axe_001
+    2301098: Cube_883
+    2301100: Cube_884
+    2301102: Cube_885
+    2301104: Cube_886
+    2301106: Cube_887
+    2301108: Cube_888
+    2301110: Cube_889
+    2301112: Cube_890
+    2301114: Cube_891
+    2301116: Cube_892
+    2301118: Cube_893
+    2301120: Cube_894
+    2301122: Cube_895
+    2301124: Cube_896
+    2301126: Cube_897
+    2301128: Cube_898
+    2301130: Cube_899
+    2301132: Cube_900
+    2301134: Cube_901
+    2301136: Cube_902
+    2301138: Cube_903
+    2301140: Cylinder_005
+    2301142: Cylinder_006
+    2301144: Cylinder_007
+    2301146: Cylinder_008
+    2301148: spear
+    2301150: spear_001
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -2272,6 +2380,36 @@ ModelImporter:
     3301086: Cube_880
     3301088: Cube_881
     3301090: Cube_882
+    3301092: abstract_city_001
+    3301094: axe
+    3301096: axe_001
+    3301098: Cube_883
+    3301100: Cube_884
+    3301102: Cube_885
+    3301104: Cube_886
+    3301106: Cube_887
+    3301108: Cube_888
+    3301110: Cube_889
+    3301112: Cube_890
+    3301114: Cube_891
+    3301116: Cube_892
+    3301118: Cube_893
+    3301120: Cube_894
+    3301122: Cube_895
+    3301124: Cube_896
+    3301126: Cube_897
+    3301128: Cube_898
+    3301130: Cube_899
+    3301132: Cube_900
+    3301134: Cube_901
+    3301136: Cube_902
+    3301138: Cube_903
+    3301140: Cylinder_005
+    3301142: Cylinder_006
+    3301144: Cylinder_007
+    3301146: Cylinder_008
+    3301148: spear
+    3301150: spear_001
     4300000: Cube_341
     4300002: Cube_340
     4300004: Cube_339
@@ -2818,6 +2956,36 @@ ModelImporter:
     4301086: Cube_594
     4301088: Cube_593
     4301090: Cube_592
+    4301092: Cube_903
+    4301094: Cylinder_008
+    4301096: Cylinder_007
+    4301098: Cylinder_006
+    4301100: Cylinder_005
+    4301102: abstract_city_001
+    4301104: spear_001
+    4301106: spear
+    4301108: axe_001
+    4301110: axe
+    4301112: Cube_899
+    4301114: Cube_898
+    4301116: Cube_897
+    4301118: Cube_896
+    4301120: Cube_895
+    4301122: Cube_887
+    4301124: Cube_886
+    4301126: Cube_885
+    4301128: Cube_884
+    4301130: Cube_883
+    4301132: Cube_894
+    4301134: Cube_893
+    4301136: Cube_892
+    4301138: Cube_891
+    4301140: Cube_890
+    4301142: Cube_889
+    4301144: Cube_888
+    4301146: Cube_900
+    4301148: Cube_901
+    4301150: Cube_902
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
