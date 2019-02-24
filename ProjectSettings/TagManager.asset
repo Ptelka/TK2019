@@ -8,6 +8,9 @@ TagManager:
   - Used
   - Source
   - Destination
+  - Plane
+  - Topornicy
+  - Wlocznicy
   layers:
   - Default
   - TransparentFX

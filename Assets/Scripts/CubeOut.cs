@@ -54,5 +54,17 @@ public class CubeOut : MonoBehaviour
          vertices[7] = v3BackTopLeft = new Vector3(v3Center.x - v3Extents.x, v3Center.y + v3Extents.y, v3Center.z + v3Extents.z);
          vertices[8] = v3FrontTopLeft;
      }
- }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Topornicy")
+        {
+            GameControll.Instance.EndGame(Team.Topornicy);
+        }
+        else if (other.tag == "Wlocznicy")
+        {
+            GameControll.Instance.EndGame(Team.Wlocznicy);
+        }
+    }
+}
  
