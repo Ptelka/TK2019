@@ -6,7 +6,6 @@ using UnityEngine;
 public class CamControll : MonoBehaviour
 {
     public Camera me;
-    public Player owner;
     public Transform Target;
     public float FollowDistance;
     public float CatchUpSpeed;
