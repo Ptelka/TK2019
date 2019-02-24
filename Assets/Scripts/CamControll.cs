@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CamControll : MonoBehaviour
 {
+    public Camera me;
+    public Player owner;
     public Transform Target;
     public float FollowDistance;
     public float CatchUpSpeed;
@@ -14,7 +16,7 @@ public class CamControll : MonoBehaviour
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
     void Start()
     {
-        offset = transform.position - Target.position;
+        offset = new Vector3(0,10,0);
     }
 
     void FixedUpdate()
